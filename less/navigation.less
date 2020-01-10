@@ -1,1 +1,35 @@
 // Navigation Styles here
+.top-bar {
+    .flex-display(space-between, center);
+    height       : 8vh;
+    border-bottom: 2px dashed silver;
+
+    @media @mobile {
+        .mobile-flex();
+        height: 15vh;
+        padding-top: 5%;
+    }
+
+    nav {
+        .flex-display(space-between, center);
+        width: 49%;
+
+        @media @mobile{
+            width: 100%;
+        }
+
+        a {
+            color          : black;
+            text-decoration: none;
+            .flex-display(center, center);
+            padding: 3%;
+            width  : 24%;
+            
+            &:hover{
+                color: lighten(black, 50%)
+            }
+
+            
+        }
+    }
+}
